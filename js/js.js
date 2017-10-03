@@ -34,6 +34,8 @@ jQuery(document).ready(function($) {
 		$(".desc").velocity({color:"#333"})
      	$(".progress").velocity({width:"0%"});
      	$(".tip-nav").velocity({color:"#333"})
+     	$(".desc a").velocity({color:"#333"})
+ 		$(".desc a").velocity({borderColor:"#333"})
 	}
 
 	$( ".side-nav li" ).click(function() {
@@ -57,7 +59,7 @@ jQuery(document).ready(function($) {
 			$(".desc").velocity({color:"#fff"})
      		$(".tip-nav").velocity({color:"#fff"})
      		$(".desc a").velocity({color:"#fff"})
-     	$(".desc a").velocity({borderColor:"#fff"})
+     		$(".desc a").velocity({borderColor:"#fff"})
 		}
 		element2.velocity("transition.slideLeftBigIn",{delay:750});
 		
