@@ -1,0 +1,527 @@
+
+$lobster = 'Lobster', cursive;
+$karla = 'Karla', sans-serif;
+$ques = 'Questrial', sans-serif;
+$comfort = 'Comfortaa', cursive;
+$cinzel = 'Cinzel', serif;
+$putih = #dee5e6;
+$pt = 'PT Sans', sans-serif;
+
+$background-color=#3d5980;
+$bar-empty=#55708d;
+$bar-color=#cfd6dd;
+
+$glow-width=60px;
+$glow-radius=10px;
+$glow-color=#04bfff;
+body
+	background-color #dee5e6
+
+.wrapper-utama
+	position: absolute;
+	top:50%;
+	transform:translate(0%, -50%);
+	-webkit-transform:translate(0%, -50%);
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	width 100%
+.v100
+	height 30vh
+	background-color #333
+.root
+	min-height 120vh
+	
+.rel
+	position relative
+
+.circular
+	overflow: hidden;
+	width: 200px;
+	//border-radius: 150px;
+	height: 200px;
+	background-color transparent
+	//box-shadow 0px 0px 40px rgba(0,0,0,0.5)
+	img
+		width 100%
+		position: relative;
+		bottom: 10px;
+.img-profile
+	margin-left: 50px;
+	position: relative;
+	bottom: calc(110px - 100%);
+.wrapper-title
+	position absolute
+	top: 50%;
+	left: 0;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	margin: auto;
+	height 100%
+.inline-b
+	display inline-block
+.nama
+	margin-left: 30px;
+	position: relative;
+	bottom: calc(220px - 100%);
+	color #dee5e6
+	font-family $karla
+	font-size 46px
+.wrapper
+	height 100%
+.desc
+	margin-left: 285px;
+	position: relative;
+	bottom: calc(230px - 100%);
+	color #333
+	font-family $cinzel
+	font-size 28px
+	div
+		margin-left 250px
+		a
+			color #333
+			margin 0px 5px
+			-webkit-transition: all .25s ease
+			-moz-transition: all .25s ease
+			-ms-transition: all .25s ease
+			-o-transition: all .25s ease
+			transition: all .25s ease
+			&:hover
+				border-bottom 1px solid #333
+#particles-js
+	width 100%
+	height 100%
+	position absolute
+	left 0
+	right 0
+	top 0
+	bottom 0
+.side-nav
+	max-width 200px
+	padding-left 50px
+	position: relative;
+	top: -15px;
+	left: 20px;
+	float left
+	&:before
+		content: '';
+		position: absolute;
+		height: 140%;
+		width: 1px;
+		border-left: 3px dotted #333;
+		left: 126px;
+		top: -50px;
+		z-index: -30;
+	ul
+		list-style none
+		li
+			width 75px
+			height 75px
+			border 1px solid #333
+			background-color #333
+			text-align: center;
+			border-radius: 50px;
+			color $putih
+			font-size: 50px;
+				
+.sub-menu
+	position relative
+	-webkit-transition: all .25s ease
+	-moz-transition: all .25s ease
+	-ms-transition: all .25s ease
+	-o-transition: all .25s ease
+	transition: all .25s ease
+	margin 20px 0
+	&:before
+		-webkit-transition: all 0.30s ease
+		-moz-transition: all 0.30s ease
+		-ms-transition: all 0.30s ease
+		-o-transition: all 0.30s ease
+		transition: all 0.30s ease
+		position absolute
+		content ''
+		top: 11px;
+		left: 11px;
+		right: 0;
+		bottom: 0;
+		width 50px
+		height 50px
+		border 1px solid #333
+		border-radius 50px
+		-webkit-transform: scale(0);
+		-moz-transform: scale(0);
+		-ms-transform: scale(0);
+		-o-transform: scale(0);
+		transform: scale(0);
+		z-index -1
+	&:after
+		position absolute
+		content ''
+		top: 11px;
+		left: 11px;
+		right: 0;
+		bottom: 0;
+		width 50px
+		height 50px
+		border 1px solid #333
+		border-radius 50px
+		background-color #333
+		z-index -2
+	&:hover
+		transform: scale(0.89);
+		cursor pointer
+		.tip-nav
+			opacity 1
+			transform: translateY(0px) translateX(0px);
+		&:before
+			transform: scale(1.9);
+		&:after
+			animation: pulse 3s infinite
+.sub-menu.active
+	cursor default
+	transform: scale(0.89);
+	-webkit-transition: all 0.30s ease
+	-moz-transition: all 0.30s ease
+	-ms-transition: all 0.30s ease
+	-o-transition: all 0.30s ease
+	transition: all 0.30s ease
+	a
+		cursor default
+	&:before
+		transform: scale(1.9);
+	&:after
+		position absolute
+		content ''
+		top: 11px;
+		left: 11px;
+		right: 0;
+		bottom: 0;
+		width 50px
+		height 50px
+		border 1px solid #333
+		border-radius 50px
+		background-color #333
+		z-index -2
+		animation: pulse 3s infinite
+.konten
+	padding-top 100px
+.content
+	width: 580px;
+	margin-left: 140px;
+	min-height: 700px;
+	position: relative;
+	float left
+	margin-bottom 100px
+.sub-content
+	padding: 30px;
+	position relative
+	top 45px
+	left 10px
+.sublime
+	background-color #404041 !important
+	border none !important
+	min-height 265px
+	padding-left: 45px;
+	padding-top: 20px;
+	box-shadow 10px 10px 30px 5px rgba(0,0,0,0.5)
+	&:before
+		content ''
+		position absolute
+		background-color #f1f1f1
+		top -40px
+		left 0
+		width 100%
+		height 40px
+		border-radius 10px 10px 0 0
+	p
+		color white
+		font-family $ques
+	
+	.counter
+		list-style none
+		position absolute
+		left -25px
+		top 20px
+		display inline
+		width 20px
+		li
+			color #a7a7a7	
+			font-size 16px
+			font-family $ques	
+			margin-bottom 4px
+.icon
+	position absolute
+	top -40px
+	left 0
+	width 100px
+	height 40px
+	padding 10px
+	span
+		width 20px
+		height 20px
+		border-radius 20px
+		display inline-block
+		margin-right 5px
+		&:nth-child(1)
+			background-color #e74c3c
+		&:nth-child(2)
+			background-color #f1c40f
+		&:nth-child(3)
+			background-color #2ecc71
+.wrapper-gambar
+	width 100%
+	height 300px
+	overflow hidden
+	position relative
+	border-radius 0px 25px 0px 25px
+	margin-bottom 20px
+
+.gua
+	width: 100%;
+	position: absolute;
+	top: -140px;
+	left: 0;
+.bordered
+	border 1px solid #333
+	border-radius 0 30px 0 30px
+	&:before
+		content: '';
+		position: absolute;
+		top: -30px;
+		left: -30px;
+		width: 50px;
+		height: 50px;
+		border: 5px solid #dee5e6;
+		background-color: #333;
+.quote
+	font-size 50px
+p
+	font-family $ques
+	font-size 18px
+	display inline
+	img
+		width 100%
+.balloon
+	position: absolute
+	height: 120px
+	width: 120px
+	border: 5px solid red
+	border-radius: 50%
+	background: #333
+	border-color: #848484
+	right: -200px;
+	top: -60px;
+	&::before
+		content: ""
+		position: absolute
+		left: calc(50% - 6px)
+		bottom: -12px
+		z-index: -1
+		box-sizing: border-box
+		border-bottom: 12px solid #333
+		border-left: 6px solid transparent
+		border-right: 6px solid transparent
+	&:nth-child(2)
+		-webkit-transform: scale(0.7);
+		   -moz-transform: scale(0.7);
+		    -ms-transform: scale(0.7);
+		     -o-transform: scale(0.7);
+		        transform: scale(0.7);
+		right -100px
+
+	&::after
+		content: ""
+		position: absolute
+		height: 20px
+		width: 20px
+		border-radius: 50%
+		background: #fff
+		top: 20px
+		left: 20px
+	.string
+		position: absolute
+		width: 2px
+		height: 260px
+		left: calc(50% - 1px)
+		top: 115px
+		z-index: -2
+		background: #333
+
+.tip-nav
+	opacity 0
+	-webkit-transition: all 0.30s ease
+	-moz-transition: all 0.30s ease
+	-ms-transition: all 0.30s ease
+	-o-transition: all 0.30s ease
+	transition: all 0.30s ease
+	position: absolute;
+	display block
+	color: #000;
+	left: 100px;
+	top: 20px;
+	font-size: 22px;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	transform: translateX(30px);
+	text-transform uppercase
+	pointer-events none
+.c2
+	display none
+.c3
+	display none
+	top -20px
+.c4
+	display none
+	width 700px
+	left: -20px;
+	top: 25px;
+.c5
+	display none
+.typed-cursor
+	animation cursor 1s infinite
+	font-size 18px
+	color white
+
+@keyframes cursor
+	0%
+		opacity 1
+	100%
+		opacity 0
+	
+@keyframes pulse
+	0%
+		opacity 1
+		transform scale(0)
+	100%
+		opacity 0
+		transform scale(3)
+@keyframes label
+	0% 
+		opacity:0; 
+		transform:translateY(10px)
+	100%
+		opacity:0.9; transform:translateY(0)
+// messages 
+.container-skills
+	margin-bottom 30px
+	p
+		color white
+		font-family $ques
+		a
+			color #7d94b5
+.lbl
+	font-family:$ques;
+	color:white;
+	text-shadow:0px 0px 2px $bar-color;
+	font-size:24px;
+.progress-bar
+	height:3px;
+	width:100%;
+	position:relative;
+	z-index:10;
+
+	background-color:$bar-empty;
+	.progress
+		position:relative;
+		height:100%;
+		background-color:$bar-color;
+		transition:width 0.5s ease-out;
+		border-radius: 0px 2px 2px 0px;
+	.glow
+		width:$glow-width;
+		max-width:100%;
+		height:100%;
+		float:right;
+		&:before,&:after
+			content:'';
+			display:block;
+			position:relative;
+			border-radius:0px 2px 2px 0px;
+		&:before
+			background:transparent;
+			height:100%;
+			box-shadow:0px 0px $glow-radius $bar-color, 0px 0px $glow-radius $glow-color;
+			z-index:-5;
+		&:after
+			background: linear-gradient(to right, $background-color 0%, transparent 100%);
+			height: calc(100% + 10px + 10px);
+			width: calc(100% + 10px);
+			top: -10px;
+			left: -10px;
+			z-index: -3;
+.fill-1 
+	width:0%;
+.frame-ex
+	position relative
+	width 100%
+	min-height 400px
+	background-color: #404041 ;
+	&:before
+		content: '';
+		position: absolute;
+		background-color: #f1f1f1;
+		top: -40px;
+		left: 0;
+		width: 100%;
+		height: 40px;
+		border-radius: 10px 10px 0 0;
+	.title-ex
+		position absolute
+		top -40px
+		left 0
+		width 100%
+		height 40px
+		color #404041
+		font-family $ques
+		text-transform uppercase
+		padding-top 10px
+	img
+		width: 100%;
+		-o-object-fit: cover;
+		object-fit: cover;
+		height: 400px;
+.wrapper-ex
+	-webkit-transition: all .25s ease
+	-moz-transition: all .25s ease
+	-ms-transition: all .25s ease
+	-o-transition: all .25s ease
+	transition: all .25s ease
+	margin-bottom 100px
+	background-color transparent
+	border-radius: 0px 0px 15px 15px;
+	&:hover
+		box-shadow: 0 0 30px #18192d;
+		transform scale(1.009)
+		background-color transparent
+	        
+.tag-ex
+	padding 10px
+	background-color #333
+	opacity 0.5
+	display flex
+	justify-content space-between
+	flex-wrap wrap
+	border-radius: 0px 0px 15px 15px;
+	&:after
+		content: "";
+		flex: auto;
+	div
+		font-family $ques
+		font-size 14px
+		padding 5px 10px
+		margin 5px
+		color #f1f1f1
+		display inline-block
+		text-transform uppercase
+		position relative
+		text-shadow 0px 0px 0px white 
+.contact
+	p
+		font-family $ques
+		color white
