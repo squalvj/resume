@@ -1,4 +1,4 @@
-particlesJS.load('particles-js', './js/particles.json', function() {
+particlesJS.load('particles-js', 'https://cdn.rawgit.com/squalvj/resume/gh-pages/js/particles.json', function() {
   console.log('callback - particles.js config loaded');
 });
 var temporary = $(".c1")
