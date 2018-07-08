@@ -106,7 +106,7 @@ jQuery(document).ready(function($) {
 moveBackground();
 
   var typed2 = new Typed('.c1 p', {
-    strings: ['Wubba lubba dub dub everyone :)','you can call me adit, i am a full stack developper.^1000<br> I have strong passion in programming especially at PHP and Javascript. I like doing web things, such as templating, or make a dope animation using Tweenmax framework, and of course potato, potato is love.'],
+    strings: ['Hello everyone :)','you can call me adit, i am a Front End Developper.^1000<br> I have strong passion in programming especially at PHP and Javascript. I like doing web things, such as templating, or make a dope animation using Tweenmax framework, and of course potato, potato is love.'],
     typeSpeed: 40,
  	backSpeed: 10,
     loop:false
